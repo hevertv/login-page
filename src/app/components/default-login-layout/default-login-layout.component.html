@@ -1,13 +1,22 @@
 <main>
+
   <section class="form-section">
     <img src="logo.svg" alt="Logo Company"/>
-    <h2></h2>
-    <button title="butao"></button>
-    <div>
-      <span>Or</span>
+    <h2>{{ title }}</h2>
+
+    <ng-content> </ng-content>
+
+    <div class="btn-wrapper">
+      <button class="btn-primary">{{ primaryBtnText }}</button>
+      <div class="divider">
+          <div></div>
+          <span>Or</span>
+          <div></div>
+      </div>
+      <button class="btn-secondary">{{ secondaryBtnText }}</button>
     </div>
-    <button title= "butao"></button>
   </section>
+
   <section class="main-section">
     <h2>Dropa Skin?</h2>
     <img src="main-ilustration.svg" alt="Background Image">
