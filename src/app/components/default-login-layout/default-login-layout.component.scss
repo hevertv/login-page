@@ -78,7 +78,12 @@ main {
         padding: 12px 24px;
         cursor: pointer;
 
-        /* the & commercial identifies it is a button*/
+        &:disabled {
+            opacity: 0.8;
+        }
+
+        /* the & button identifies it is a button */
+
         &.btn-primary {
           background-color: $primary-color;
           color: white;
